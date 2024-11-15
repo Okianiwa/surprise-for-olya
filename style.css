@@ -1,0 +1,81 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.section {
+  text-align: center;
+  padding: 50px 20px;
+  min-height: 100vh;
+}
+
+h1, h2 {
+  font-size: 2.5em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+button {
+  background: #ff6f61;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  margin-top: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #ff3b3b;
+}
+
+.hearts-animation {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.hearts-animation::after {
+  content: "❤️ ❤️ ❤️";
+  font-size: 3em;
+  position: absolute;
+  animation: hearts-fall 4s linear infinite;
+}
+
+@keyframes hearts-fall {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.hidden {
+  display: none;
+}
+
+#gift-reveal {
+  margin-top: 20px;
+}

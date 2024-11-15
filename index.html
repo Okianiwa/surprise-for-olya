@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сюрприз для Оли</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main-container">
+    <!-- Главная страница -->
+    <section id="home" class="section">
+      <h1>Оля, ты — самое важное, что есть в моей жизни!</h1>
+      <p>Этот сайт я сделал только для тебя. Надеюсь, он подарит тебе улыбку ❤️</p>
+      <div class="hearts-animation"></div>
+      <button onclick="scrollToSection('why')">Дальше →</button>
+    </section>
+
+    <!-- Почему я тебя люблю -->
+    <section id="why" class="section">
+      <h2>Почему я тебя люблю</h2>
+      <ul>
+        <li>Ты делаешь каждый мой день ярче.</li>
+        <li>Ты самая красивая и умная.</li>
+        <li>С тобой я могу быть собой.</li>
+        <li>Твоя улыбка — это магия.</li>
+        <li>Я люблю тебя за то, какая ты настоящая.</li>
+      </ul>
+      <button onclick="scrollToSection('moments')">Дальше →</button>
+    </section>
+
+    <!-- Наши лучшие моменты -->
+    <section id="moments" class="section">
+      <h2>Наши лучшие моменты</h2>
+      <div class="gallery">
+        <img src="assets/us.jpg" alt="Момент 1">
+        <img src="assets/bandts.jpg" alt="Момент 2">
+        <img src="assets/sleep.jpg" alt="Момент 3">
+      </div>
+      <button onclick="scrollToSection('message')">Дальше →</button>
+    </section>
+
+    <!-- Сообщение для неё -->
+    <section id="message" class="section">
+      <h2>Сообщение для тебя</h2>
+      <p>Дорогая Оля,  
+      Каждый день с тобой — это счастье. Ты — мой вдохновитель и смысл жизни.  
+      Спасибо за всё, что ты делаешь для нас. Я люблю тебя больше, чем слова могут выразить. 💖  
+      </p>
+      <button onclick="scrollToSection('gift')">Подарок →</button>
+    </section>
+
+    <!-- Подарок -->
+    <section id="gift" class="section">
+      <h2>Сюрприз для тебя</h2>
+      <p>Нажми на кнопку, чтобы открыть свой подарок.</p>
+      <button onclick="revealGift()">Проверить здесь</button>
+      <div id="gift-reveal" class="hidden">
+        <p>Это твоё персональное видео! ❤️</p>
+        <a href="assets/video.mp4" target="_blank">Смотреть видео</a>
+      </div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
